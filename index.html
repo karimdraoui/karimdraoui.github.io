@@ -1,36 +1,262 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-	<title>Stage officiel des pompiers de Morlais</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link href="style.css" rel="stylesheet" type="text/css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Karim Draoui – Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
-	<div id="menu">
-		<h1>Sapeurs pompiers de Morlais</h1>
-		<ul>
-			<li><a href="./pages/centre.html">Le centre</a></li>
-			<li><a href="./pages/stats.html">Les stats </a></li>
-		</ul>
-	</div>
-	
-	<div id="centre">
-		<fieldset>
-		<legend>Comment appeler les pompiers ?</legend>
-		<h2>Composer le 18 ou le 112 (numéro d'urgence européen).</h2>
-		<h2>Composer uniquement ces numéros pour les urgences graves</h2>
-		<h2>Autres numéros d'urgence : 15 samu - 17 police</h2>
-		<h2>En cas de sinistre, indiquer :</h2>
-		<ul>
-			<li class="cligno">La nature du sinistre</li>
-			<li class="cligno">Le lieu</li>
-			<li class="cligno">Le nombre de victimes et leurs états</li>
-		</ul>
-		<center>
-		<!--photographie du centre du secours -->
-		???
-		</center>
-		</fieldset>
-	</div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <span class="nav-logo">Karim Draoui</span>
+      <ul class="nav-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Bonjour, je suis</p>
+      <h1 class="hero-name">Karim Draoui</h1>
+      <p class="hero-title">Étudiant en <span>BUT Science des Données</span></p>
+      <p class="hero-sub">Passionné par l'analyse de données, la visualisation et la statistique.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+        <a href="#contact" class="btn btn-outline">Me contacter</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <a href="#about"><i class="fas fa-chevron-down"></i></a>
+    </div>
+  </section>
+
+  <!-- À PROPOS -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">À propos</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Je suis <strong>Karim Draoui</strong>, étudiant en 1ère année de 
+            <strong>BUT Science des Données</strong>, bientôt en 2ème année 
+            dès septembre 2026.
+          </p>
+          <p>
+            Au fil de mes projets, j'ai développé des compétences en analyse 
+            statistique, visualisation de données et programmation. J'aime 
+            transformer des données brutes en insights clairs et utiles.
+          </p>
+          <p>
+            Je travaille principalement avec <strong>R</strong>, 
+            <strong>Python</strong> et les outils de datavisualisation.
+          </p>
+        </div>
+        <div class="about-cards">
+          <div class="info-card">
+            <i class="fas fa-graduation-cap"></i>
+            <div>
+              <h4>Formation</h4>
+              <p>BUT Science des Données – 1ère année</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Localisation</h4>
+              <p>France</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>m.draoui.karim@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <h2 class="section-title">Mes Projets</h2>
+      <p class="section-sub">Quelques projets réalisés durant ma 1ère année de BUT</p>
+      <div class="projects-grid">
+
+        <!-- Projet 1 -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-chart-bar"></i></div>
+            <div class="project-tags">
+              <span class="tag">R</span>
+              <span class="tag">GGplot2</span>
+              <span class="tag">DataViz</span>
+            </div>
+          </div>
+          <h3>Visualisation Parcoursup</h3>
+          <p>
+            Analyse des données Parcoursup 2024/2025 centrée sur les BTS. 
+            Réalisation de 7 graphiques GGplot2 (univariés, bivariés, géographique) 
+            pour explorer la répartition des formations, taux d'accès et candidatures par région.
+          </p>
+          <div class="project-footer">
+            <span class="project-context">SAÉ S1 – Binôme</span>
+          </div>
+        </div>
+
+        <!-- Projet 2 -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-calculator"></i></div>
+            <div class="project-tags">
+              <span class="tag">R</span>
+              <span class="tag">Statistiques</span>
+              <span class="tag">Inférence</span>
+            </div>
+          </div>
+          <h3>Échantillonnage & Estimation</h3>
+          <p>
+            Estimation de la population d'Île-de-France par sondage aléatoire simple 
+            et sondage stratifié avec intervalles de confiance à 95%. 
+            Analyse de l'enquête sport/étudiants via tests Khi-deux et V de Cramer.
+          </p>
+          <div class="project-footer">
+            <span class="project-context">SAÉ S1/S2 – Binôme</span>
+          </div>
+        </div>
+
+        <!-- Projet 3 -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-database"></i></div>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">Dashboard</span>
+            </div>
+          </div>
+          <h3>Outil d'analyse PCR – Qualyse</h3>
+          <p>
+            Développement d'un outil dynamique pour le laboratoire Qualyse permettant 
+            d'analyser des tests PCR mycoides (2018–2025) sur des élevages. 
+            Dashboard interactif avec classification en 8 classes et indicateurs d'évolution.
+          </p>
+          <div class="project-footer">
+            <span class="project-context">SAÉ S2 – Groupe de 5 · Vrai commanditaire</span>
+          </div>
+        </div>
+
+        <!-- Projet 4 -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-table"></i></div>
+            <div class="project-tags">
+              <span class="tag">R</span>
+              <span class="tag">Analyse exploratoire</span>
+            </div>
+          </div>
+          <h3>Analyse exploratoire – Enquête Sport</h3>
+          <p>
+            Exploration et nettoyage de données d'enquête sur la pratique sportive 
+            des étudiants. Tableaux croisés, statistiques descriptives et 
+            identification de variables clés liées à la pratique du sport.
+          </p>
+          <div class="project-footer">
+            <span class="project-context">SAÉ S1 – Binôme</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPÉTENCES -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section-title">Compétences</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h4><i class="fas fa-code"></i> Langages</h4>
+          <div class="skill-pills">
+            <span>R</span>
+            <span>Python</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4><i class="fas fa-chart-pie"></i> Data & Viz</h4>
+          <div class="skill-pills">
+            <span>GGplot2</span>
+            <span>Pandas</span>
+            <span>Matplotlib</span>
+            <span>Power BI</span>
+            <span>Excel</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4><i class="fas fa-brain"></i> Statistiques</h4>
+          <div class="skill-pills">
+            <span>Statistique descriptive</span>
+            <span>Inférence statistique</span>
+            <span>Tests Khi-deux</span>
+            <span>Sondage stratifié</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4><i class="fas fa-tools"></i> Outils</h4>
+          <div class="skill-pills">
+            <span>Git / GitHub</span>
+            <span>RStudio</span>
+            <span>VS Code</span>
+            <span>Trello</span>
+            <span>SCRUM</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-sub">N'hésitez pas à me contacter !</p>
+      <div class="contact-box">
+        <a href="mailto:m.draoui.karim@gmail.com" class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>m.draoui.karim@gmail.com</span>
+        </a>
+        <a href="https://github.com/karimdraoui" target="_blank" class="contact-item">
+          <i class="fab fa-github"></i>
+          <span>github.com/karimdraoui</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Karim Draoui – Portfolio BUT Science des Données</p>
+  </footer>
+
 </body>
 </html>
