@@ -5,257 +5,167 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Karim Draoui – Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <span class="nav-logo">Karim Draoui</span>
-      <ul class="nav-links">
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#projects">Projets</a></li>
-        <li><a href="#skills">Compétences</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
+  <nav>
+    <span class="logo">Karim Draoui</span>
+    <ul>
+      <li><a href="#apropos">À propos</a></li>
+      <li><a href="#projets">Projets</a></li>
+      <li><a href="#competences">Compétences</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
 
   <!-- HERO -->
-  <section class="hero" id="hero">
+  <section id="hero">
     <div class="hero-content">
-      <p class="hero-greeting">Bonjour, je suis</p>
-      <h1 class="hero-name">Karim Draoui</h1>
-      <p class="hero-title">Étudiant en <span>BUT Science des Données</span></p>
-      <p class="hero-sub">Passionné par l'analyse de données, la visualisation et la statistique.</p>
-      <div class="hero-btns">
-        <a href="#projects" class="btn btn-primary">Voir mes projets</a>
-        <a href="#contact" class="btn btn-outline">Me contacter</a>
-      </div>
-    </div>
-    <div class="hero-scroll">
-      <a href="#about"><i class="fas fa-chevron-down"></i></a>
+      <h1>Karim <span>Draoui</span></h1>
+      <p class="hero-sub">Étudiant en BUT Science des Données</p>
+      <p class="hero-desc">IUT de Niort – Université de Poitiers</p>
+      <a href="#projets" class="btn">Voir mes projets</a>
     </div>
   </section>
 
   <!-- À PROPOS -->
-  <section class="section" id="about">
-    <div class="container">
-      <h2 class="section-title">À propos</h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>
-            Je suis <strong>Karim Draoui</strong>, étudiant en 1ère année de 
-            <strong>BUT Science des Données</strong>, bientôt en 2ème année 
-            dès septembre 2026.
-          </p>
-          <p>
-            Au fil de mes projets, j'ai développé des compétences en analyse 
-            statistique, visualisation de données et programmation. J'aime 
-            transformer des données brutes en insights clairs et utiles.
-          </p>
-          <p>
-            Je travaille principalement avec <strong>R</strong>, 
-            <strong>Python</strong> et les outils de datavisualisation.
-          </p>
-        </div>
-        <div class="about-cards">
-          <div class="info-card">
-            <i class="fas fa-graduation-cap"></i>
-            <div>
-              <h4>Formation</h4>
-              <p>BUT Science des Données – 1ère année</p>
-            </div>
-          </div>
-          <div class="info-card">
-            <i class="fas fa-map-marker-alt"></i>
-            <div>
-              <h4>Localisation</h4>
-              <p>France</p>
-            </div>
-          </div>
-          <div class="info-card">
-            <i class="fas fa-envelope"></i>
-            <div>
-              <h4>Email</h4>
-              <p>m.draoui.karim@gmail.com</p>
-            </div>
-          </div>
-        </div>
+  <section id="apropos">
+    <h2>À propos</h2>
+    <div class="apropos-grid">
+      <div class="apropos-text">
+        <p>
+          Je m'appelle Karim Draoui, étudiant en première année de BUT Science des Données 
+          à l'IUT de Niort. Passionné par l'analyse de données, la visualisation et la 
+          programmation, je construis progressivement mes compétences à travers des projets 
+          concrets tout au long de ma formation.
+        </p>
+        <p>
+          En dehors des études, je pratique le <strong>Jiu-Jitsu Brésilien (JJB)</strong>, 
+          un sport qui m'apprend la rigueur et la persévérance.
+        </p>
+        <p>🎓 Bientôt en 2ème année de BUT SD &nbsp;|&nbsp; 🌍 Anglais B2</p>
+      </div>
+      <div class="apropos-tags">
+        <span>Python</span>
+        <span>R</span>
+        <span>SAS</span>
+        <span>SQL</span>
+        <span>Excel / VBA</span>
+        <span>Power BI</span>
+        <span>ggplot2</span>
+        <span>HTML / CSS</span>
       </div>
     </div>
   </section>
 
   <!-- PROJETS -->
-  <section class="section section-alt" id="projects">
-    <div class="container">
-      <h2 class="section-title">Mes Projets</h2>
-      <p class="section-sub">Quelques projets réalisés durant ma 1ère année de BUT</p>
-      <div class="projects-grid">
+  <section id="projets">
+    <h2>Mes Projets</h2>
+    <div class="projets-grid">
 
-        <!-- Projet 1 -->
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon"><i class="fas fa-chart-bar"></i></div>
-            <div class="project-tags">
-              <span class="tag">R</span>
-              <span class="tag">GGplot2</span>
-              <span class="tag">DataViz</span>
-            </div>
-          </div>
-          <h3>Visualisation Parcoursup</h3>
-          <p>
-            Analyse des données Parcoursup 2024/2025 centrée sur les BTS. 
-            Réalisation de 7 graphiques GGplot2 (univariés, bivariés, géographique) 
-            pour explorer la répartition des formations, taux d'accès et candidatures par région.
-          </p>
-          <div class="project-footer">
-            <span class="project-context">SAÉ S1 – Binôme</span>
-          </div>
+      <div class="card">
+        <div class="card-header">
+          <span class="tag">R · ggplot2</span>
         </div>
-
-        <!-- Projet 2 -->
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon"><i class="fas fa-calculator"></i></div>
-            <div class="project-tags">
-              <span class="tag">R</span>
-              <span class="tag">Statistiques</span>
-              <span class="tag">Inférence</span>
-            </div>
-          </div>
-          <h3>Échantillonnage & Estimation</h3>
-          <p>
-            Estimation de la population d'Île-de-France par sondage aléatoire simple 
-            et sondage stratifié avec intervalles de confiance à 95%. 
-            Analyse de l'enquête sport/étudiants via tests Khi-deux et V de Cramer.
-          </p>
-          <div class="project-footer">
-            <span class="project-context">SAÉ S1/S2 – Binôme</span>
-          </div>
-        </div>
-
-        <!-- Projet 3 -->
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon"><i class="fas fa-database"></i></div>
-            <div class="project-tags">
-              <span class="tag">Python</span>
-              <span class="tag">HTML/CSS</span>
-              <span class="tag">Dashboard</span>
-            </div>
-          </div>
-          <h3>Outil d'analyse PCR – Qualyse</h3>
-          <p>
-            Développement d'un outil dynamique pour le laboratoire Qualyse permettant 
-            d'analyser des tests PCR mycoides (2018–2025) sur des élevages. 
-            Dashboard interactif avec classification en 8 classes et indicateurs d'évolution.
-          </p>
-          <div class="project-footer">
-            <span class="project-context">SAÉ S2 – Groupe de 5 · Vrai commanditaire</span>
-          </div>
-        </div>
-
-        <!-- Projet 4 -->
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon"><i class="fas fa-table"></i></div>
-            <div class="project-tags">
-              <span class="tag">R</span>
-              <span class="tag">Analyse exploratoire</span>
-            </div>
-          </div>
-          <h3>Analyse exploratoire – Enquête Sport</h3>
-          <p>
-            Exploration et nettoyage de données d'enquête sur la pratique sportive 
-            des étudiants. Tableaux croisés, statistiques descriptives et 
-            identification de variables clés liées à la pratique du sport.
-          </p>
-          <div class="project-footer">
-            <span class="project-context">SAÉ S1 – Binôme</span>
-          </div>
-        </div>
-
+        <h3>Visualisation Parcoursup</h3>
+        <p>
+          Analyse des BTS sur Parcoursup en 2024–2025. Réalisation de 7 graphiques 
+          (univariés, bivariés, géographiques) sur le thème des BTS : taux d'accès, 
+          répartition public/privé, données géographiques.
+        </p>
+        <ul>
+          <li>74,1% des BTS sont dans le public</li>
+          <li>Les établissements privés ont un taux d'accès globalement plus élevé</li>
+          <li>Utilisation de 3 fichiers CSV croisés</li>
+        </ul>
       </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="tag">Excel · VBA</span>
+        </div>
+        <h3>Reporting notes BUT SD</h3>
+        <p>
+          Création d'un outil Excel automatisé connecté à une base de données relationnelle 
+          pour gérer et visualiser les résultats académiques des étudiants du BUT SD.
+        </p>
+        <ul>
+          <li>Connexion à un SGBD relationnel</li>
+          <li>Interface ergonomique avec macros VBA</li>
+          <li>Calcul automatique des moyennes et règles de passage</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="tag">R · Statistiques</span>
+        </div>
+        <h3>Échantillonnage – Île-de-France</h3>
+        <p>
+          Étude statistique sur la population des communes d'Île-de-France. 
+          Comparaison entre sondage aléatoire simple et sondage stratifié pour 
+          estimer la population totale.
+        </p>
+        <ul>
+          <li>Données INSEE sur toutes les communes IDF</li>
+          <li>Tests du khi-deux et V de Cramer</li>
+          <li>Analyse de l'effet du sport sur les étudiants</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="tag">Excel · VBA · Datavisualisation</span>
+        </div>
+        <h3>Reporting Labo Qualyse</h3>
+        <p>
+          Outil dynamique pour le laboratoire Qualyse (analyses PCR sur élevages des 
+          départements 79 et 86). Traitement de données 2018–2025, classification en 
+          8 catégories et tableau de bord interactif.
+        </p>
+        <ul>
+          <li>Données PCR sur 7 ans (2018–2025)</li>
+          <li>Présentation orale en anglais devant jury</li>
+          <li>Méthode SCRUM · Gestion de projet</li>
+        </ul>
+      </div>
+
     </div>
   </section>
 
-  <!-- COMPÉTENCES -->
-  <section class="section" id="skills">
-    <div class="container">
-      <h2 class="section-title">Compétences</h2>
-      <div class="skills-grid">
-
-        <div class="skill-group">
-          <h4><i class="fas fa-code"></i> Langages</h4>
-          <div class="skill-pills">
-            <span>R</span>
-            <span>Python</span>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>SQL</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h4><i class="fas fa-chart-pie"></i> Data & Viz</h4>
-          <div class="skill-pills">
-            <span>GGplot2</span>
-            <span>Pandas</span>
-            <span>Matplotlib</span>
-            <span>Power BI</span>
-            <span>Excel</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h4><i class="fas fa-brain"></i> Statistiques</h4>
-          <div class="skill-pills">
-            <span>Statistique descriptive</span>
-            <span>Inférence statistique</span>
-            <span>Tests Khi-deux</span>
-            <span>Sondage stratifié</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h4><i class="fas fa-tools"></i> Outils</h4>
-          <div class="skill-pills">
-            <span>Git / GitHub</span>
-            <span>RStudio</span>
-            <span>VS Code</span>
-            <span>Trello</span>
-            <span>SCRUM</span>
-          </div>
-        </div>
-
+  <!-- COMPETENCES -->
+  <section id="competences">
+    <h2>Compétences</h2>
+    <div class="competences-grid">
+      <div class="comp-block">
+        <h4>Langages</h4>
+        <p>Python · R · SAS · SQL · VBA · HTML/CSS</p>
+      </div>
+      <div class="comp-block">
+        <h4>Outils</h4>
+        <p>Excel · Power BI · Métabase · Git</p>
+      </div>
+      <div class="comp-block">
+        <h4>Données</h4>
+        <p>Nettoyage · Visualisation · Statistiques · Reporting</p>
+      </div>
+      <div class="comp-block">
+        <h4>Soft skills</h4>
+        <p>Travail en équipe · Gestion de projet SCRUM · Rigueur · Anglais B2</p>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section class="section section-alt" id="contact">
-    <div class="container">
-      <h2 class="section-title">Contact</h2>
-      <p class="section-sub">N'hésitez pas à me contacter !</p>
-      <div class="contact-box">
-        <a href="mailto:m.draoui.karim@gmail.com" class="contact-item">
-          <i class="fas fa-envelope"></i>
-          <span>m.draoui.karim@gmail.com</span>
-        </a>
-        <a href="https://github.com/karimdraoui" target="_blank" class="contact-item">
-          <i class="fab fa-github"></i>
-          <span>github.com/karimdraoui</span>
-        </a>
-      </div>
-    </div>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Tu veux me contacter ? Envoie-moi un mail !</p>
+    <a href="mailto:m.draoui.karim@gmail.com" class="btn">m.draoui.karim@gmail.com</a>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p>© 2026 Karim Draoui – Portfolio BUT Science des Données</p>
+  <footer>
+    <p>© 2026 Karim Draoui – Fait avec HTML/CSS</p>
   </footer>
 
 </body>
